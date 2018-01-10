@@ -39,7 +39,8 @@
     opacity:0;
 }
 .copy-button {
-    width: 110px;
+    padding-left: 3px;
+    padding-right: 3px;    
     font-family: 'Work Sans', sans-serif;
 }
 .color-number-input {
