@@ -4,6 +4,7 @@
     text-align: center;
     vertical-align: text-top;
     line-height: 10px;
+    font-family: 'Work Sans', sans-serif;
 }
 .color-holder {
     height: 175px;
@@ -11,7 +12,7 @@
     background-color: black;
     color:white;
     font-family: 'Work Sans', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     vertical-align: middle;
     line-height: 175px;
@@ -38,7 +39,7 @@
     opacity:0;
 }
 .copy-button {
-    width: 107px;
+    width: 110px;
     font-family: 'Work Sans', sans-serif;
 }
 .color-number-input {
