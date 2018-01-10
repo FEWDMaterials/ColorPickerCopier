@@ -10,7 +10,7 @@
     width: 545px;
     background-color: black;
     color:white;
-    font-family:Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 50px;
     text-align: center;
     vertical-align: middle;
@@ -39,10 +39,12 @@
 }
 .copy-button {
     width: 107px;
+    font-family: 'Work Sans', sans-serif;
 }
 .color-number-input {
     width:75px;
     margin-bottom: 5px;
     margin-left: 181px;
     text-align: center;
+    font-family: 'Work Sans', sans-serif;
 }
