@@ -1,2 +1,2 @@
 # ColorPicker-Copier
-A random color picker adn copier
+A random color picker and copier
