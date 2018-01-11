@@ -30,27 +30,19 @@ const onClick = event => {
 
     colorHolder.style.backgroundColor = randomColor;
     squareHolder.innerHTML += `<div class="square" style="background-color: ${randomColor}"></div>`
-    const lastSquare = document.querySelector('.square:last-child')
-    let colorStr = lastSquare.style.backgroundColor
-    colorStr = colorStr.slice(colorStr.indexOf('(') + 1, colorStr.indexOf(')'));
-    const colorArr = colorStr.split(',');
 
-    if (colorArr[0] < 150 || colorArr[1] < 150 || colorArr[2] < 150) {
-        colorHolder.style.color = "white";
-        colorHolder.innerHTML = lastSquare.style.backgroundColor
-        colorHistory.push(colorHolder.innerHTML)
-        colorHistoryView.value = colorHistory
+    if (R < 150 || G < 150 || B < 150) {
+        colorHolder.style.color = "white";    
     }
     else {
         colorHolder.style.color = "black";
-        colorHolder.innerHTML = lastSquare.style.backgroundColor
-        colorHistory.push(colorHolder.innerHTML)
-        colorHistoryView.value = colorHistory
-
-
     }
-    const allSquares = document.querySelectorAll('.square')
-    if (allSquares.length > 20) {
+
+    colorHolder.innerHTML = randomColor;
+    colorHistory.push(randomColor);
+    colorHistoryView.value = randomColor;
+
+    if (colorHistory.length > 20) {
         squareHolder.innerHTML = ''
         colorHolder.style.backgroundColor = null
         colorHolder.innerHTML = 'Click to Generate Color'
