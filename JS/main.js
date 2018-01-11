@@ -51,27 +51,5 @@ const onClick = event => {
         colorHistoryView.value = colorHistory
     }
 }
-const copyRgbColor = (event) => {
-    colorName.value = colorHolder.style.backgroundColor
-    colorName.select();
-    document.execCommand("Copy");
-}
-
-const copyValue = () => {
-    if (copyNumberValue.value > colorHistory.length) {
-        alert("No color at the position to copy")
-    }
-    else {
-    const num = copyNumberValue.value
-    const copyHistoryValue = (num) => {
-        colorHistoryView.value = colorHistory[num-1]
-        colorHistoryView.select()
-        document.execCommand('Copy')
-    }
-    copyHistoryValue(num)
-    }
-}
 
 colorHolder.addEventListener('click', onClick);
-colorHolder.addEventListener('click', copyRgbColor);
-button.addEventListener('click', copyValue)
